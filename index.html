@@ -1,224 +1,368 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - André</title>
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>  
-    (function() {  
-      emailjs.init("SEU_USER_ID"); // substituir pelo seu User ID  
-    })();  
-  </script>
-</head>
-<body class="bg-gray-50 ">
-  <!--Header-->
-    <header class="fixed w-full bg-white shadow-sm z-50 ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - André</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("SEU_USER_ID"); // substituir pelo seu User ID
+      })();
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    <!--Header-->
+    <header class="fixed w-full bg-white shadow-sm z-50">
       <nav class="cotainer mx-auto px-6 py-4">
-        <div class=" flex items-center justify-between">
-          <a href="./" class=" text-2xl text-gray-800 font-bold">Portfolio</a>
-          <div class="hidden md:flex space-x-8 ">
+        <div class="flex items-center justify-between">
+          <a href="./" class="text-2xl text-gray-800 font-bold">Portfolio</a>
+          <div class="hidden md:flex space-x-8">
             <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
             <a href="#sobre" class="text-gray-600 hover:text-gray-900">Sobre</a>
-            <a href="#projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
-            <a href="#habilidades" class="text-gray-600 hover:text-gray-900">Habilidades</a>
-            <a href="#contatos" class="text-gray-600 hover:text-gray-900">Contatos</a>
+            <a href="#projetos" class="text-gray-600 hover:text-gray-900"
+              >Projetos</a
+            >
+            <a href="#habilidades" class="text-gray-600 hover:text-gray-900"
+              >Habilidades</a
+            >
+            <a href="#contatos" class="text-gray-600 hover:text-gray-900"
+              >Contatos</a
+            >
           </div>
         </div>
       </nav>
     </header>
-  <!--/Header-->
+    <!--/Header-->
 
-  <!--Hero Section-->
-    <section id="home" class="pt-24 lg:pt-32 pb-16 bg-gradient-to-br from-blue-100 to-indgo-50">
-        <div class="container mx-auto px-6 ">
-          <!--/ Div Pricipal-->
-          <div class="flex flex-col lg:flex-row items-center justfy-between">
-            <div class="lg:w-1/2 text-center lg:text-left mr-3">
-              <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Olá, eu sou <br> <samp class="text-indigo-600"> Desenvolvedor Full Stack </samp></h1>
-              <p class=" text-lg text-gray-600 mb-8">Transformando ideias em esperiências digitais incriveis</p>
-              <a href="#contato" class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-800 transition duration-300">Entre em contato</a>
-            </div><!--/Div cionteudo-->
-            <div class="lg:1/2 mt-12 lg:mt-0 ">
-              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Developer workspace" class="rounded-lg shadow-xl">
-            </div><!--imagem-->
-
-
+    <!--Hero Section-->
+    <section
+      id="home"
+      class="pt-24 lg:pt-32 pb-16 bg-gradient-to-br from-blue-100 to-indgo-50"
+    >
+      <div class="container mx-auto px-6">
+        <!--/ Div Pricipal-->
+        <div class="flex flex-col lg:flex-row items-center justfy-between">
+          <div class="lg:w-1/2 text-center lg:text-left mr-3">
+            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Olá, eu sou <br />
+              <samp class="text-indigo-600"> Desenvolvedor Full Stack </samp>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+              Transformando ideias em esperiências digitais incriveis
+            </p>
+            <a
+              href="#contato"
+              class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-800 transition duration-300"
+              >Entre em contato</a
+            >
           </div>
-          <!--/ Div Pricipal-->
+          <!--/Div cionteudo-->
+          <div class="lg:1/2 mt-12 lg:mt-0">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Developer workspace"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+          <!--imagem-->
         </div>
+        <!--/ Div Pricipal-->
+      </div>
     </section>
-  <!--/Hero Section-->
+    <!--/Hero Section-->
 
-  <!--sobre section-->
+    <!--sobre section-->
     <section id="sobre" class="py-20 bg-white">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-900 gap-12 pb-15">Sobre mim</h2>
+        <h2 class="text-3xl font-bold text-center text-gray-900 gap-12 pb-15">
+          Sobre mim
+        </h2>
         <div class="flex flex-col items-center gap-12 lg:flex-row">
           <div class="lg:w-1/2">
-            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sobre" class="rounded-lg shadow-lg">
-          </div><!--imagem sobre-->
+            <img
+              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Sobre"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <!--imagem sobre-->
           <div class="lg:w-1/2">
-            <p class="text-gray-600 text-lg leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nisi distinctio blanditiis, accusantium perspiciatis rerum perferendis, qui ipsam nobis, et porro modi veritatis quaerat exercitationem nesciunt veniam harum delectus alias.</p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+              nisi distinctio blanditiis, accusantium perspiciatis rerum
+              perferendis, qui ipsam nobis, et porro modi veritatis quaerat
+              exercitationem nesciunt veniam harum delectus alias.
+            </p>
             <div class="mt-8">
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Experiencias</h3>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Experiencias
+              </h3>
               <ul class="space-y-4">
-                <li class="flex items-center"><svg class="w-6 h-6 text-indigo-600 mr-2"      fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg> 
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 text-indigo-600 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
                   <samp class="text-gray-600">Desenvolvimento Full Stack</samp>
                 </li>
 
-                <li class="flex items-center"><svg class="w-6 h-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 text-indigo-600 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
                   <samp class="text-gray-600">UI/UX Desing</samp>
                 </li>
 
-                <li class="flex items-center"><svg class="w-6 h-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                <li class="flex items-center">
+                  <svg
+                    class="w-6 h-6 text-indigo-600 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
                   <samp class="text-gray-600">Gestão de Progeto</samp>
                 </li>
-
               </ul>
-
-            </div><!--/ experiencias-->
-
-          </div><!--div conteudo sobre mim-->
-
-         
-          
-        </div>
-      </div><!--div principal-->
-    </section>
-
-  <!--/sobre section-->
-
-   <!--projetos-->
-
-   <section id="projetos" class="ty-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-xl font-bold text-center text-gray-900 mb-12">Meus Projetos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!--Projeto 1 -->
-          <div class="white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://media.istockphoto.com/id/1328260985/pt/foto/mock-up-laptop-books-clipboard-coffee-cup-and-houseplant-on-wooden-desk.jpg?s=2048x2048&w=is&k=20&c=4uBgawqHWuSpL4dZA9raPy5JZsmTI6DilYjP5mcHyw0=" alt="" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">Ecomerce</h3>
-              <p class="text-gray-600 mb-4">Plataforma completa de e-comerce com sistema de pagamentos integrados.</p>
-              <a href="#" class=" text-indigo-600 text-center hover:text-indigo-800 font-medium">Ver projeto →</a>
-              <a href="#Ver projeto" class="text-indigo-600 hover:indigo-800 font-medium"></a>
             </div>
+            <!--/ experiencias-->
           </div>
-        <!--/Projeto 1 -->
-
-        <!--Projeto 2 -->
-        <div class="white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://media.istockphoto.com/id/1015426272/pt/foto/smartphone-and-laptop.jpg?s=2048x2048&w=is&k=20&c=bl2fVJXbIs2dPMw23JJUeW1EUnk_xANssjLhM4GXKJ0=" alt="" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">App Mobile</h3>
-            <p class="text-gray-600 mb-4">Aplicativo mobile para gestão de tarefas e produtividade.</p>
-            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Ver projeto →</a>
-            <a href="#Ver projeto" class="text-indigo-600 hover:indigo-800 font-medium"></a>
-          </div>
-        </div>
-      <!--/Projeto 2 -->
-
-      <!--Projeto 3 -->
-      <div class="white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">Dashbosrd Analytcs</h3>
-          <p class="text-gray-600 mb-4">Dashboard para analise de dados em tempo real.</p>
-          <a href="#Ver projeto" class="text-indigo-600 hover:text-indigo-800 font-medium">Ver projeto →</a>
-      
+          <!--div conteudo sobre mim-->
         </div>
       </div>
-    <!--/Projeto 3 -->
-      </div><!-- grid cards-->
+      <!--div principal-->
+    </section>
 
-    </div>
-  </section>
-  <!--/projetos-->
+    <!--/sobre section-->
 
-  <!--Habilidades-->
-      <section class="py-20 bg-white" id="habilidades">
-        <div class="container mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Minhas Habilidades</h2>
-          <!-- cards habilidades-->
-           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!--Card 01 Habilidades-->
-            <div class="p-6 bg-gray-50 rounded-lg text-center">
-              <div class="text-4xl mb-4">💻</div>
-              <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+    <!--projetos-->
+
+    <section id="projetos" class="ty-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-xl font-bold text-center text-gray-900 mb-12">
+          Meus Projetos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!--Projeto 1 -->
+          <div class="white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/1328260985/pt/foto/mock-up-laptop-books-clipboard-coffee-cup-and-houseplant-on-wooden-desk.jpg?s=2048x2048&w=is&k=20&c=4uBgawqHWuSpL4dZA9raPy5JZsmTI6DilYjP5mcHyw0="
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Ecomerce</h3>
+              <p class="text-gray-600 mb-4">
+                Plataforma completa de e-comerce com sistema de pagamentos
+                integrados.
+              </p>
+              <a
+                href="#"
+                class="text-indigo-600 text-center hover:text-indigo-800 font-medium"
+                >Ver projeto →</a
+              >
+              <a
+                href="#Ver projeto"
+                class="text-indigo-600 hover:indigo-800 font-medium"
+              ></a>
             </div>
+          </div>
+          <!--/Projeto 1 -->
 
-            <!--/Card 01 Habilidades-->
-
-            <!--Card 02 Habilidades-->
-            <div class="p-6 bg-gray-50 rounded-lg text-center">
-              <div class="text-4xl mb-4">⚡</div>
-              <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          <!--Projeto 2 -->
+          <div class="white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/1015426272/pt/foto/smartphone-and-laptop.jpg?s=2048x2048&w=is&k=20&c=bl2fVJXbIs2dPMw23JJUeW1EUnk_xANssjLhM4GXKJ0="
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                App Mobile
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Aplicativo mobile para gestão de tarefas e produtividade.
+              </p>
+              <a
+                href="#"
+                class="text-indigo-600 hover:text-indigo-800 font-medium"
+                >Ver projeto →</a
+              >
+              <a
+                href="#Ver projeto"
+                class="text-indigo-600 hover:indigo-800 font-medium"
+              ></a>
             </div>
+          </div>
+          <!--/Projeto 2 -->
 
-            <!--/Card 02 Habilidades-->
-
-            <!--Card 03 Habilidades-->
-            <div class="p-6 bg-gray-50 rounded-lg text-center">
-              <div class="text-4xl mb-4">🚀</div>
-              <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          <!--Projeto 3 -->
+          <div class="white rounded-lg shadow-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Dashbosrd Analytcs
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Dashboard para analise de dados em tempo real.
+              </p>
+              <a
+                href="#Ver projeto"
+                class="text-indigo-600 hover:text-indigo-800 font-medium"
+                >Ver projeto →</a
+              >
             </div>
-
-            <!--/Card 03 Habilidades-->
-
-            <!--Card 04 Habilidades-->
-            <div class="p-6 bg-gray-50 rounded-lg text-center">
-              <div class="text-4xl mb-4">🎨</div>
-              <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
-            </div>
-           </div>
-          <!--/ cards habilidades-->
+          </div>
+          <!--/Projeto 3 -->
         </div>
+        <!-- grid cards-->
+      </div>
+    </section>
+    <!--/projetos-->
 
-      </section>
+    <!--Habilidades-->
+    <section class="py-20 bg-white" id="habilidades">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Minhas Habilidades
+        </h2>
+        <!-- cards habilidades-->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <!--Card 01 Habilidades-->
+          <div class="p-6 bg-gray-50 rounded-lg text-center">
+            <div class="text-4xl mb-4">💻</div>
+            <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          </div>
 
-  <!--/Habilidades-->
+          <!--/Card 01 Habilidades-->
 
-  <!--Contato-->
-      <section class="py-20 bg-gray-50" id="contato">
-        <div class="cotainer mx-auto px-6">
-          <h2 class="text-3xl text-center text-gray-900 mb-2 font-bold">Entre em contato</h2>
-          <!--formulario de contato-->
-            <div class="max-w-2xl mx-auto">
-              <form action="" id="contact-form" class="space-y-6">
-                <div>
-                  <label for="name" class="block text-gray-700 mb-2">Nome</label>
-                  <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
+          <!--Card 02 Habilidades-->
+          <div class="p-6 bg-gray-50 rounded-lg text-center">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          </div>
 
-                <div>
-                  <label for="email" class="block text-gray-700 mb-2">E-mail</label>
-                  <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                </div>
+          <!--/Card 02 Habilidades-->
 
-                <div>
-                  <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
-                  <textarea id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-                  <button type="submit" class="w-full bg-indigo-600 text-white py-3 rouded-lg hover:bg-indigo-700 transition duration-300">Enviar Mensagem</button>
-                </div>
-              </form>
-            </div>
-          <!--/formulario de contato-->
+          <!--Card 03 Habilidades-->
+          <div class="p-6 bg-gray-50 rounded-lg text-center">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          </div>
+
+          <!--/Card 03 Habilidades-->
+
+          <!--Card 04 Habilidades-->
+          <div class="p-6 bg-gray-50 rounded-lg text-center">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="font-semibold text-gray-900">HTML/CSS</h3>
+          </div>
         </div>
-      </section>
+        <!--/ cards habilidades-->
+      </div>
+    </section>
 
-  <!--/Contato-->
+    <!--/Habilidades-->
 
+    <!--Contato-->
+    <section class="py-20 bg-gray-50" id="contato">
+      <div class="cotainer mx-auto px-6">
+        <h2 class="text-3xl text-center text-gray-900 mb-2 font-bold">
+          Entre em contato
+        </h2>
+        <!--formulario de contato-->
+        <div class="max-w-2xl mx-auto">
+          <form action="" id="contact-form" class="space-y-6">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2">Nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
 
+            <div>
+              <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
 
+            <div>
+              <label for="message" class="block text-gray-700 mb-2"
+                >Mensagem</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-indigo-600 text-white py-3 rouded-lg hover:bg-indigo-700 transition duration-300"
+              >
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--/formulario de contato-->
+      </div>
+    </section>
 
-  
-</body>
+    <!--/Contato-->
+    <!--footer-->
+
+    <!--/footer-->
+    <!--Script enviar email via formulario-->
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          console.log("Dados do Formulario:", {
+            name: this.name.value,
+            email: this.email.value,
+            message: this.message.value,
+          });
+        });
+    </script>
+    <!--/Script enviar email via formulario-->
+  </body>
 </html>
